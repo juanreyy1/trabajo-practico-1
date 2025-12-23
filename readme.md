@@ -16,7 +16,7 @@ Este programa permite jugar al clásico juego de **Piedra, Papel o Tijera** cont
 El usuario ingresa su jugada en cada ronda y la computadora elige la suya de forma aleatoria.
 
 El juego finaliza cuando:
-- Se completan todas las rondas, o
+- Se completan todas las rondas;
 - Alguno de los jugadores alcanza una cantidad de puntos tal que el otro ya no puede alcanzarlo (mejor de N).
 
 Al finalizar, se muestra el resultado final y el ganador.
