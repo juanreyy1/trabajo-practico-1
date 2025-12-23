@@ -1,38 +1,62 @@
-# Piedra, Papel o Tijera en Python
+# Piedra, Papel o Tijera
+
+Juego simple de **Piedra, Papel o Tijera** desarrollado en **Python**, donde el usuario juega contra la computadora bajo la modalidad **“mejor de N rondas”**.
+
+---
 
 ## Autor
-Juan Manuel Reynoso
 
-## Descripción
-Este programa implementa el juego clásico "Piedra, Papel o Tijera" en Python, permitiendo que un usuario juegue contra la computadora.
+**Juan Manuel Reynoso**
 
-El jugador puede elegir cuántas rondas desea jugar (entre 1 y 100).  
-El juego se desarrolla bajo la modalidad **“mejor de N”**, lo que significa que la partida puede finalizar antes si alguno de los participantes alcanza la cantidad mínima de puntos necesaria para asegurar la victoria.
+---
 
-La computadora elige su jugada de manera aleatoria en cada ronda, y el programa valida todas las entradas del usuario para evitar errores.
+## Descripción del programa
 
-## Funcionalidades principales
-- Selección de cantidad de rondas por parte del usuario.
-- Validación de entradas (jugadas y número de rondas).
-- Elección aleatoria de jugadas para la computadora.
-- Conteo de puntos del usuario y de la computadora.
-- Finalización anticipada del juego cuando ya hay un ganador.
-- Mostrar el resultado final de la partida.
+Este programa permite jugar al clásico juego de **Piedra, Papel o Tijera** contra la computadora.  
+El usuario ingresa su jugada en cada ronda y la computadora elige la suya de forma aleatoria.
+
+El juego finaliza cuando:
+- Se completan todas las rondas, o
+- Alguno de los jugadores alcanza una cantidad de puntos tal que el otro ya no puede alcanzarlo (mejor de N).
+
+Al finalizar, se muestra el resultado final y el ganador.
+
+---
 
 ## Reglas del juego
-- Piedra gana a Tijera.
-- Tijera gana a Papel.
-- Papel gana a Piedra.
-- Si ambos eligen la misma opción, es empate.
+
+- Piedra le gana a Tijera  
+- Tijera le gana a Papel  
+- Papel le gana a Piedra  
+- Si ambos eligen lo mismo, es empate  
+
+---
+
+## Funcionamiento general
+
+1. Se define la cantidad total de rondas.
+2. El usuario ingresa su jugada (`piedra`, `papel` o `tijera`).
+3. La computadora elige una jugada al azar.
+4. Se comparan las jugadas y se asignan puntos.
+5. Se verifica si alguno ya ganó la partida por diferencia de puntos.
+6. Al finalizar, se muestra el resultado final.
+
+---
 
 ## Requisitos
-- Python instalado en el sistema. (Cualquier version)
+
+- Python (cualquier version)
+- No requiere librerías externas (solo módulos estándar de Python).
+
+---
 
 ## Cómo ejecutar el programa
 
-1. Descargar el repositorio.
-2. Abrir una terminal en la carpeta donde se encuentra el archivo.
+1. Guardar el archivo con el nombre:
+2. 2. Abrir una terminal en la carpeta donde se encuentra el archivo.
 3. Ejecutar el siguiente comando:
 
 ```bash
-python nombre_del_archivo.py
+python piedra_papel_tijera.py
+
+
