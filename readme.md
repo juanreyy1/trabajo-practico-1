@@ -53,7 +53,7 @@ Al finalizar, se muestra el resultado final y el ganador.
 ## Cómo ejecutar el programa
 
 1. Guardar el archivo con el nombre:
-2. 2. Abrir una terminal en la carpeta donde se encuentra el archivo.
+2. Abrir una terminal en la carpeta donde se encuentra el archivo.
 3. Ejecutar el siguiente comando:
 
 ```bash
