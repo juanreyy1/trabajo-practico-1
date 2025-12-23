@@ -1,28 +1,38 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;}
-{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
-{\*\expandedcolortbl;;\cssrgb\c27100\c27100\c27100;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+# Piedra, Papel o Tijera en Python
 
-\f0\fs33\fsmilli16658 \cf2 READ.ME\
+## Autor
+Juan Manuel Reynoso
 
-\fs23\fsmilli11759 # Piedra, Papel o Tijera \'97 Juego en Python\
-ALUMNO = Juan Manuel Reynoso\
-Este programa implementa el cl\'e1sico juego *Piedra, Papel o Tijera* para jugar\
-contra la computadora.\
-Est\'e1 pensado como una serie al mejor de **N** rondas (por defecto, 5). Si el\
-n\'famero de rondas indicado\
-es par, el programa lo ajusta al siguiente impar para garantizar que siempre\
-haya un ganador.\
-Adem\'e1s, **corta de forma anticipada** cuando matem\'e1ticamente el rival ya no\
-puede alcanzarte, incluso\
-si nadie lleg\'f3 a\'fan a las victorias necesarias.\
-#\'bfC\'f3mo funciona?\
-- **Modo \'93mejor de N\'94**: se calcula `victorias_necesarias = N // 2 + 1`.\
-- **Ajuste de par a impar**: si `N` es par, se convierte en `N + 1`.\
-- **Corte anticipado**: si la diferencia de puntos es mayor a las rondas\
-restantes, la serie se define antes.\
-- **Validaci\'f3n de entrada**: solo se aceptan `piedra`, `papel` o `tijera` (no se\
-consume ronda ante entradas inv\'e1lidas).\
-- **Empates**: se contabilizan, pero no suman puntos a ning\'fan jugador.}
+## Descripción
+Este programa implementa el juego clásico "Piedra, Papel o Tijera" en Python, permitiendo que un usuario juegue contra la computadora.
+
+El jugador puede elegir cuántas rondas desea jugar (entre 1 y 100).  
+El juego se desarrolla bajo la modalidad **“mejor de N”**, lo que significa que la partida puede finalizar antes si alguno de los participantes alcanza la cantidad mínima de puntos necesaria para asegurar la victoria.
+
+La computadora elige su jugada de manera aleatoria en cada ronda, y el programa valida todas las entradas del usuario para evitar errores.
+
+## Funcionalidades principales
+- Selección de cantidad de rondas por parte del usuario.
+- Validación de entradas (jugadas y número de rondas).
+- Elección aleatoria de jugadas para la computadora.
+- Conteo de puntos del usuario y de la computadora.
+- Finalización anticipada del juego cuando ya hay un ganador.
+- Mostrar el resultado final de la partida.
+
+## Reglas del juego
+- Piedra gana a Tijera.
+- Tijera gana a Papel.
+- Papel gana a Piedra.
+- Si ambos eligen la misma opción, es empate.
+
+## Requisitos
+- Python instalado en el sistema. (Cualquier version)
+
+## Cómo ejecutar el programa
+
+1. Descargar el repositorio.
+2. Abrir una terminal en la carpeta donde se encuentra el archivo.
+3. Ejecutar el siguiente comando:
+
+```bash
+python nombre_del_archivo.py
